@@ -8,8 +8,9 @@ def word_select():
     word_list.close()
     words = contents_of_file.split()
     global chosen_word
+    global chosen_word_length
     chosen_word = random.choice(words)
-
+    chosen_word_length = len(chosen_word)
 
 word_select()
 
@@ -18,8 +19,14 @@ def input_guess():
     guess = input("What is your Guess?..")
     answer = letter_check.LetterCheck(chosen_word, guess)
     answer.checker()
-    print(answer.guess)
-    print(answer.word)
-    print(answer.correct)
 input_guess()
+
+
+def visualizer():
+
+
+
+
+
+
 exit()
