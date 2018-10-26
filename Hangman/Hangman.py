@@ -19,10 +19,13 @@ def input_guess():
     guess = input("What is your Guess?..")
     answer = letter_check.LetterCheck(chosen_word, guess)
     answer.checker()
+    print(chosen_word)
+    print(answer.correct)
+    print(answer.guess)
+
 input_guess()
 
 
-def visualizer():
 
 
 
