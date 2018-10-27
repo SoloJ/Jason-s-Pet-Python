@@ -10,7 +10,17 @@ def word_select():
     chosen_word = random.choice(words)
     answer = letter_check.LetterCheck(chosen_word)
     answer.blanker()
-    answer.blank_filler()
-    answer.UserInput()
+    answer.hangman_text()
+    print(chosen_word)
+
+    while "-" in answer.blank_display_word:
+        print(answer.hangman_filled)
+        answer.UserInput()
+        answer.blank_filler()
+        answer.hangman_text()
+
+    print(chosen_word)
+    print("You Win!!")
+
 word_select()
 
