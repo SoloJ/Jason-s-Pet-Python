@@ -11,6 +11,10 @@ def word_select():
     answer = letter_check.LetterCheck(chosen_word)
     answer.blanker()
     answer.blank_filler()
-    answer.UserInput()
+
+    while "-" in answer.blank_display_word:
+        answer.UserInput()
+        answer.blank_filler()
+
 word_select()
 

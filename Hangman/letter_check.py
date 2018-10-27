@@ -30,13 +30,12 @@ class LetterCheck():
 
         if self.correct == "true":
             n = 0
-            while self.found_letter == "false":
-                if self.guess not in self.word[n]:
+            while n < self.chosen_word_length:
+                if self.guess in self.word[n]:
+                    self.blank_display_word.pop(n)
+                    self.blank_display_word.insert(n, self.display_word[n])
                     n = n + 1
                 else:
-                    self.found_letter == "true"
-                    self.position = n
-                    break
+                    n = n + 1
 
-        self.blank_display_word.pop(self.position)
-        self.blank_display_word.insert(n, self.display_word[n])
+
