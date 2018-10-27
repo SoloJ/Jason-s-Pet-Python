@@ -4,7 +4,6 @@ class LetterCheck():
         self.word = chosen_word
         self.blank_display_word = list()
         self.chosen_word_length = len(chosen_word)
-        self.guess = input("What is your Guess?..")
         self.display_word = list(chosen_word)
 
 
@@ -37,5 +36,9 @@ class LetterCheck():
                     n = n + 1
                 else:
                     n = n + 1
+
+
+    def hangman_text(self):
+        self.hangman_filled = " ".join(self.blank_display_word)
 
 
