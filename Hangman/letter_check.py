@@ -8,7 +8,7 @@ class LetterCheck():
 
 
     def UserInput(self):  # requests another guess from the user
-        self.guess = input("What is your Guess?..")
+        self.guess = raw_input("What is your Guess?..")
 
     def blanker(self):  # call once to create a blank array of length equal to the selected word
 
