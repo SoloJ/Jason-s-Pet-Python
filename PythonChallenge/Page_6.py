@@ -1,6 +1,5 @@
 
 import os
-from sets import Set
 import zipfile
 
 n = str(90052)
@@ -22,3 +21,4 @@ while z<908:
 diff_list = set(file_strip).difference(list_keeper)
 my_file = zipfile.ZipFile("/Users/jasonsolomon/PycharmProjects/Jason-s-Pet-Python/PythonChallenge/channel.zip")
 iguess = my_file.comment
+print(files.comment)
